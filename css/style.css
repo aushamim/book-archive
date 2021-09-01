@@ -71,3 +71,20 @@ body {
   font-weight: 600;
   color: blueviolet;
 }
+#books-section {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.book {
+  padding: 10px;
+  margin: 10px;
+  background-color: #ffe9b6;
+  border-radius: 10px;
+}
+.book-img {
+  display: flex;
+  justify-content: center;
+}
+.bold-text {
+  font-weight: 600;
+}
