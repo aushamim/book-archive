@@ -68,7 +68,5 @@ const bookData = (bookList) => {
         </div>
     `;
     bookSection.appendChild(book);
-    // console.log(book);
   });
-  //   console.log(bookList);
 };
