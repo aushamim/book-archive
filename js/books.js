@@ -19,7 +19,7 @@ const searchClick = () => {
 const getBooks = (bookID) => {
   document.getElementById("book-count").style.display = "none";
   document.getElementById("searching").style.display = "block";
-  fetch(`http://openlibrary.org/search.json?q=${bookID}`)
+  fetch(`https://openlibrary.org/search.json?q=${bookID}`)
     .then((res) => res.json())
     .then((data) => books(data));
 };
