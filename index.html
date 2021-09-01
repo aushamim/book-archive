@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Book Archive</title>
+    <!-- CSS -->
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
@@ -12,14 +13,18 @@
       <h1><span>Book</span> Archive</h1>
     </header>
     <main class="main-section">
-      <section>
-        <div class="search-section">
-          <input id="input-field" type="text" placeholder="Search a Book" />
-          <button id="search-button">Search</button>
+      <section class="search-section">
+        <div class="search-container">
+          <input id="input-field" type="text" placeholder="Search a Book ..." />
+          <button id="search-button" onclick="searchClick()">Search</button>
         </div>
-        <p id="book-count">100 Books Found</p>
+        <div class="status">
+          <p id="searching">Searching...</p>
+          <p id="empty-search">Please enter a book name.</p>
+          <p id="book-count">0 Books Found</p>
+        </div>
       </section>
-      <section>
+      <section id="books-section">
         <h1>Nayeem Vaier নিচে Ache Duita বিচে</h1>
       </section>
     </main>

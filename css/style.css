@@ -19,6 +19,9 @@ body {
 }
 
 .search-section {
+  margin-bottom: 30px;
+}
+.search-container {
   display: flex;
   justify-content: center;
 }
@@ -42,6 +45,24 @@ body {
 }
 #input-field {
   width: 30%;
+}
+.status {
+  display: flex;
+  justify-content: center;
+}
+#searching {
+  display: none;
+  margin-top: 2px;
+  text-align: center;
+  font-weight: 600;
+  color: violet;
+}
+#empty-search {
+  display: none;
+  margin-top: 2px;
+  text-align: center;
+  font-weight: 600;
+  color: red;
 }
 #book-count {
   visibility: hidden;
